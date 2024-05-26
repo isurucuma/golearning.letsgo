@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"flag"
 	"fmt"
+	"html/template"
 	"log"
 	"net/http"
 	"os"
@@ -15,9 +16,10 @@ import (
 )
 
 type application struct {
-	errorLog *log.Logger
-	infoLog  *log.Logger
-	snippets *models.SnippetModel
+	errorLog      *log.Logger
+	infoLog       *log.Logger
+	snippets      *models.SnippetModel
+	templateCache map[string]*template.Template
 }
 
 const (
@@ -29,22 +31,19 @@ const (
 
 func main() {
 	addr := flag.String("addr", ":4000", "HTTP network port")
-
 	defaultDsn := fmt.Sprintf("%s:%s@tcp(%s)/%s?parseTime=true", username, password, hostname, dbName)
 
 	dsn := flag.String("dsn", defaultDsn, "MySQL data source name")
 
 	flag.Parse()
 
-	f, err := os.OpenFile("./tmp/info.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
-
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	infoLog := log.New(f, "INFO\t", log.Ldate|log.Ltime) // here | operator is a bitwise operator
-
 	errLog := log.New(os.Stderr, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
+
+	f, err := os.OpenFile("./tmp/info.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	if err != nil {
+		errLog.Fatal(err)
+	}
+	infoLog := log.New(f, "INFO\t", log.Ldate|log.Ltime) // here | operator is a bitwise operator
 
 	db, err := openDB(*dsn)
 	if err != nil {
@@ -53,12 +52,17 @@ func main() {
 	infoLog.Print("Database connection successfull")
 	defer db.Close()
 
-	app := &application{
-		errorLog: errLog,
-		infoLog:  infoLog,
-		snippets: &models.SnippetModel{DB: db},
+	templateCache, err := newTemplateCache()
+	if err != nil {
+		errLog.Fatal(err)
 	}
 
+	app := &application{
+		errorLog:      errLog,
+		infoLog:       infoLog,
+		snippets:      &models.SnippetModel{DB: db},
+		templateCache: templateCache,
+	}
 	infoLog.Print("Server starting on", *addr)
 
 	server := &http.Server{
@@ -66,9 +70,7 @@ func main() {
 		Handler:  app.routes(),
 		ErrorLog: errLog,
 	}
-
 	err = server.ListenAndServe()
-
 	errLog.Fatal(err)
 }
 
