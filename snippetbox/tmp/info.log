@@ -52,3 +52,37 @@ INFO	2024/05/26 14:14:58 Database connection successfull
 INFO	2024/05/26 14:14:58 Server starting on:4000
 INFO	2024/05/26 14:16:32 Database connection successfull
 INFO	2024/05/26 14:16:32 Server starting on:4000
+INFO	2024/05/26 16:33:48 Database connection successfull
+INFO	2024/05/26 16:33:48 Server starting on:4000
+INFO	2024/05/26 16:33:55 [::1]:54871 - HTTP/1.1 GET /snippet/view?id=3
+INFO	2024/05/26 16:35:00 Database connection successfull
+INFO	2024/05/26 16:35:00 Server starting on:4000
+INFO	2024/05/26 16:35:06 [::1]:54886 - HTTP/1.1 GET /snippet/view?id=3
+INFO	2024/05/26 16:35:11 [::1]:54886 - HTTP/1.1 GET /
+INFO	2024/05/26 16:35:52 [::1]:54886 - HTTP/1.1 GET /snippet/view?id=2
+INFO	2024/05/26 16:36:03 [::1]:54886 - HTTP/1.1 GET /snippet/view?id=1
+INFO	2024/05/26 16:36:59 Database connection successfull
+INFO	2024/05/26 16:36:59 Server starting on:4000
+INFO	2024/05/26 16:37:08 [::1]:54933 - HTTP/1.1 GET /
+INFO	2024/05/26 16:37:13 [::1]:54933 - HTTP/1.1 GET /
+INFO	2024/05/26 16:37:13 [::1]:54933 - HTTP/1.1 GET /static/css/main.css
+INFO	2024/05/26 16:37:14 [::1]:54934 - HTTP/1.1 GET /static/js/main.js
+INFO	2024/05/26 16:37:14 [::1]:54933 - HTTP/1.1 GET /static/img/logo.png
+INFO	2024/05/26 16:37:14 [::1]:54933 - HTTP/1.1 GET /static/img/favicon.ico
+INFO	2024/05/26 16:39:10 Database connection successfull
+INFO	2024/05/26 16:39:10 Server starting on:4000
+INFO	2024/05/26 16:39:17 [::1]:54969 - HTTP/1.1 GET /
+INFO	2024/05/26 16:39:17 [::1]:54970 - HTTP/1.1 GET /
+INFO	2024/05/26 16:39:17 [::1]:54971 - HTTP/1.1 GET /
+INFO	2024/05/26 16:39:18 [::1]:54973 - HTTP/1.1 GET /
+INFO	2024/05/26 16:39:23 [::1]:54974 - HTTP/1.1 GET /
+INFO	2024/05/26 16:39:23 [::1]:54977 - HTTP/1.1 GET /
+INFO	2024/05/26 16:39:23 [::1]:54978 - HTTP/1.1 GET /
+INFO	2024/05/26 16:39:34 [::1]:54989 - HTTP/1.1 GET /
+INFO	2024/05/26 16:40:01 [::1]:54990 - HTTP/1.1 GET /
+INFO	2024/05/26 16:40:01 [::1]:55006 - HTTP/1.1 GET /
+INFO	2024/05/26 16:40:01 [::1]:55007 - HTTP/1.1 GET /
+INFO	2024/05/26 16:49:33 Database connection successfull
+INFO	2024/05/26 16:49:33 Server starting on:4000
+INFO	2024/05/26 16:49:41 [::1]:55397 - HTTP/1.1 GET /
+INFO	2024/05/26 16:49:41 [::1]:55398 - HTTP/1.1 GET /favicon.ico
