@@ -86,3 +86,84 @@ INFO	2024/05/26 16:49:33 Database connection successfull
 INFO	2024/05/26 16:49:33 Server starting on:4000
 INFO	2024/05/26 16:49:41 [::1]:55397 - HTTP/1.1 GET /
 INFO	2024/05/26 16:49:41 [::1]:55398 - HTTP/1.1 GET /favicon.ico
+INFO	2024/05/26 19:36:40 Database connection successfull
+INFO	2024/05/26 19:36:40 Server starting on:4000
+INFO	2024/05/26 19:37:17 Database connection successfull
+INFO	2024/05/26 19:37:17 Server starting on:4000
+INFO	2024/05/26 19:37:25 [::1]:51514 - HTTP/1.1 GET /
+INFO	2024/05/26 19:37:25 [::1]:51514 - HTTP/1.1 GET /static/css/main.css
+INFO	2024/05/26 19:37:29 [::1]:51514 - HTTP/1.1 GET /snippet/view?id=4
+INFO	2024/05/26 19:38:13 [::1]:51514 - HTTP/1.1 GET /snippet/view?id=3
+INFO	2024/05/26 19:39:45 [::1]:51514 - HTTP/1.1 GET /
+INFO	2024/05/26 19:39:46 [::1]:51514 - HTTP/1.1 GET /
+INFO	2024/05/26 19:39:54 [::1]:51514 - HTTP/1.1 GET /snippet/view?id=4
+INFO	2024/05/26 19:40:45 [::1]:51514 - HTTP/1.1 GET /snippet/view/4
+INFO	2024/05/26 19:42:27 [::1]:51514 - HTTP/1.1 GET /snippet/view/4
+INFO	2024/05/26 19:42:55 Database connection successfull
+INFO	2024/05/26 19:42:55 Server starting on:4000
+INFO	2024/05/26 19:43:01 [::1]:51733 - HTTP/1.1 GET /snippet/view/4
+INFO	2024/05/26 19:43:14 [::1]:51733 - HTTP/1.1 GET /snippet/view/?id=4
+INFO	2024/05/26 19:43:23 [::1]:51733 - HTTP/1.1 GET /snippet/view?id=4
+INFO	2024/05/26 19:52:46 Database connection successfull
+INFO	2024/05/26 19:52:46 Server starting on:4000
+INFO	2024/05/26 19:52:52 [::1]:52207 - HTTP/1.1 GET /snippet/create
+INFO	2024/05/26 19:53:38 Database connection successfull
+INFO	2024/05/26 19:53:38 Server starting on:4000
+INFO	2024/05/26 19:53:44 [::1]:52248 - HTTP/1.1 GET /snippet/create
+INFO	2024/05/26 20:05:47 Database connection successfull
+INFO	2024/05/26 20:05:47 Server starting on:4000
+INFO	2024/05/26 20:06:01 [::1]:52791 - HTTP/1.1 GET /snippet/view/4
+INFO	2024/05/26 20:06:04 [::1]:52791 - HTTP/1.1 GET /snippet/create
+INFO	2024/05/26 20:06:18 [::1]:52791 - HTTP/1.1 POST /snippet/create
+INFO	2024/05/26 20:06:18 [::1]:52791 - HTTP/1.1 GET /snippet/snippet/view/5
+INFO	2024/05/26 20:07:41 [::1]:52791 - HTTP/1.1 GET /snippet/create
+INFO	2024/05/26 20:07:42 [::1]:52791 - HTTP/1.1 GET /
+INFO	2024/05/26 20:07:46 [::1]:52791 - HTTP/1.1 GET /snippet/view?id=5
+INFO	2024/05/26 20:08:00 [::1]:52791 - HTTP/1.1 GET /snippet/view?id=3
+INFO	2024/05/26 20:09:12 Database connection successfull
+INFO	2024/05/26 20:09:12 Server starting on:4000
+INFO	2024/05/26 20:09:19 [::1]:52910 - HTTP/1.1 GET /
+INFO	2024/05/26 20:09:20 [::1]:52910 - HTTP/1.1 GET /snippet/view/id=2
+INFO	2024/05/26 20:09:37 Database connection successfull
+INFO	2024/05/26 20:09:37 Server starting on:4000
+INFO	2024/05/26 20:09:43 [::1]:52925 - HTTP/1.1 GET /
+INFO	2024/05/26 20:09:45 [::1]:52925 - HTTP/1.1 GET /snippet/view/3
+INFO	2024/05/26 20:09:49 [::1]:52925 - HTTP/1.1 GET /snippet/create
+INFO	2024/05/26 20:10:05 [::1]:52925 - HTTP/1.1 POST /snippet/create
+INFO	2024/05/26 20:10:05 [::1]:52925 - HTTP/1.1 GET /snippet/snippet/view/6
+INFO	2024/05/26 20:11:06 Database connection successfull
+INFO	2024/05/26 20:11:06 Server starting on:4000
+INFO	2024/05/26 20:11:12 [::1]:52999 - HTTP/1.1 GET /snippet/create
+INFO	2024/05/26 20:11:14 [::1]:52999 - HTTP/1.1 GET /
+INFO	2024/05/26 20:11:15 [::1]:52999 - HTTP/1.1 GET /snippet/view/6
+INFO	2024/05/26 20:11:25 [::1]:52999 - HTTP/1.1 GET /snippet/view/5
+INFO	2024/05/26 20:11:27 [::1]:52999 - HTTP/1.1 GET /
+INFO	2024/05/26 20:11:39 [::1]:52999 - HTTP/1.1 GET /snippet/create
+INFO	2024/05/26 20:11:58 [::1]:52999 - HTTP/1.1 POST /snippet/create
+INFO	2024/05/26 20:11:58 [::1]:52999 - HTTP/1.1 GET /snippet/view/7
+INFO	2024/05/26 20:12:10 [::1]:52999 - HTTP/1.1 GET /
+INFO	2024/05/26 20:31:33 Database connection successfull
+INFO	2024/05/26 20:31:33 Server starting on:4000
+INFO	2024/05/26 20:31:52 [::1]:53835 - HTTP/1.1 GET /snippet/create
+INFO	2024/05/26 20:31:58 [::1]:53835 - HTTP/1.1 POST /snippet/create
+INFO	2024/05/26 20:32:05 [::1]:53835 - HTTP/1.1 GET /snippet/create
+INFO	2024/05/26 20:32:09 [::1]:53835 - HTTP/1.1 POST /snippet/create
+INFO	2024/05/26 20:32:12 [::1]:53835 - HTTP/1.1 GET /snippet/create
+INFO	2024/05/26 20:32:16 [::1]:53835 - HTTP/1.1 POST /snippet/create
+INFO	2024/05/26 20:32:19 [::1]:53835 - HTTP/1.1 GET /snippet/create
+INFO	2024/05/26 20:32:27 [::1]:53835 - HTTP/1.1 GET /
+INFO	2024/05/26 21:25:46 Database connection successfull
+INFO	2024/05/26 21:25:46 Server starting on:4000
+INFO	2024/05/26 21:25:53 [::1]:64802 - HTTP/1.1 GET /
+INFO	2024/05/26 21:25:55 [::1]:64802 - HTTP/1.1 GET /snippet/create
+INFO	2024/05/26 21:26:01 [::1]:64802 - HTTP/1.1 POST /snippet/create
+INFO	2024/05/26 21:26:11 [::1]:64802 - HTTP/1.1 POST /snippet/create
+INFO	2024/05/26 21:26:11 [::1]:64802 - HTTP/1.1 GET /snippet/view/8
+INFO	2024/05/26 21:26:14 [::1]:64802 - HTTP/1.1 GET /
+INFO	2024/05/26 22:05:13 Database connection successfull
+INFO	2024/05/26 22:05:13 Server starting on:4000
+INFO	2024/05/26 22:05:20 [::1]:50547 - HTTP/1.1 GET /
+INFO	2024/05/26 22:05:22 [::1]:50547 - HTTP/1.1 GET /snippet/view/8
+INFO	2024/05/26 22:05:24 [::1]:50547 - HTTP/1.1 GET /
+INFO	2024/05/26 22:05:25 [::1]:50547 - HTTP/1.1 GET /snippet/create
+INFO	2024/05/26 22:05:30 [::1]:50547 - HTTP/1.1 POST /snippet/create

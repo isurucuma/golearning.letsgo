@@ -11,6 +11,7 @@ import (
 
 	"isurucuma.golearning.letsgo/internal/models"
 
+	"github.com/go-playground/form/v4"
 	_ "github.com/go-sql-driver/mysql" // this is aliazed with _ because there is no place in this file we use the driver specific thing
 	// but still we want to run the init method in the driver so that it can register itself with the databse/sql package
 )
@@ -20,6 +21,7 @@ type application struct {
 	infoLog       *log.Logger
 	snippets      *models.SnippetModel
 	templateCache map[string]*template.Template
+	formDecoder   *form.Decoder
 }
 
 const (
@@ -57,11 +59,14 @@ func main() {
 		errLog.Fatal(err)
 	}
 
+	formDecoder := form.NewDecoder()
+
 	app := &application{
 		errorLog:      errLog,
 		infoLog:       infoLog,
 		snippets:      &models.SnippetModel{DB: db},
 		templateCache: templateCache,
+		formDecoder:   formDecoder,
 	}
 	infoLog.Print("Server starting on", *addr)
 
